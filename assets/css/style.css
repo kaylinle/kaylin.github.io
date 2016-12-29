@@ -1,0 +1,128 @@
+@font-face{
+	font-family: "Aku & Kamu";
+	src: url("../Aku&Kamu.otf") format("opentype");
+}
+
+
+/* overall */
+body{
+	font-family: "Aku & Kamu";
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #313435;
+}
+
+.panel{
+	width: 50%;
+	height: 100%;
+}
+
+.container{
+	height: 50%;
+	width: 60%;
+	margin: 40% auto;
+}
+
+/* left */
+#left-panel{
+	background-color: #FFF7DA;
+	position: fixed;
+}
+
+#left-text{
+	width: 100%;
+	margin: 10% 2%;
+	font-size: 18px;
+	line-height: 200%;
+}
+
+
+/* right */
+#right-panel{
+	background-color: #ACC4C8;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+#box {
+	text-align: center;
+	opacity: .7;
+}
+
+#box:hover{
+	opacity: 1;
+	transform: scale(1.2);
+	transform: 2s;
+	cursor: pointer;
+}
+
+
+/* name animation */
+#name-animation{
+  	width: 100%;
+}
+
+svg {
+	animation: 5s dashanimation ease forwards;
+	stroke-dasharray: 2350;
+	stroke-dashoffset: 2350;
+}
+
+path.st0{
+	animation: 4s color-change ease forwards;
+	fill: #F9FAF5;
+}
+
+@keyframes color-change{
+  100%{
+    fill: #313435;
+  }
+} 
+
+@keyframes dashanimation {
+  to {
+    stroke-dashoffset:0;
+  }
+}
+
+/* media */
+@media screen and (max-width: 799px) {
+	.panel{
+		width: 100%;
+		height: 50%;
+	}
+
+	#right-panel{
+		height: 30%;
+	}
+
+	#left-panel{
+		bottom:0;
+		height: 70%;
+	}
+
+	#left-container{
+		margin: 25% auto;
+	}
+
+	#left-text{
+		font-size: 12px;
+	}
+
+	#box img{
+		width: 100px;
+	}
+
+	#box{
+		margin-top: -50%;
+		}
+	}
+}
+
+
