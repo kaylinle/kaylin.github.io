@@ -59,7 +59,6 @@ a {
 	opacity: 1;
 	transform: scale(1.2);
 	transform: 2s;
-	cursor: pointer;
 }
 
 
@@ -99,12 +98,12 @@ path.st0{
 	}
 
 	#right-panel{
-		height: 30%;
+		height: 25%;
 	}
 
 	#left-panel{
 		bottom:0;
-		height: 70%;
+		height: 75%;
 	}
 
 	#left-container{
